@@ -1,4 +1,4 @@
-const alarmClock = function (delay) {
+const alarmClock = function(delay) {
   for (let time of delay) {
     if (time <= 0) continue;
     if (time === undefined) continue;
@@ -7,6 +7,6 @@ const alarmClock = function (delay) {
       process.stdout.write('\x07');
     }, time * 1000);
   }
-}
+};
 const args = alarmClock(process.argv.slice(2));
-console.log(args)
+console.log(args);
